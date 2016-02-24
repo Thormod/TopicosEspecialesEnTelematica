@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>TIC TAC TOE</title>
+
+	<!-- Bootstrap -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+	<!-- Own Css -->
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="oponnentCatch">
+      <h2 id="waiting-msg" style="display: none;">Waiting for response</h2>
+
+      <div class="container clearfix">
+        <div class="people-list" id="people-list">
+          <ul id="usersList"></ul>
+        </div>
+        
+           
+      </div> <!-- end container -->
+
+    <ul id="messages"></ul>
+    <form action="" style="color: #000;">
+      <input id="m" autocomplete="off" /><button style="color: #000;">Send</button>
+    </form>
+  </div>
+
+  <div id="game-board"class="container" style="display: none;">
+      <h1>Topicos Game</h1>
+      <ul id="messages"></ul>
+      <ul id="game">
+          <!-- first row -->
+          <li data-pos="0,0"></li>
+          <li data-pos="0,1"></li>
+          <li data-pos="0,2"></li>
+          <!-- second row -->
+          <li data-pos="1,0"></li>
+          <li data-pos="1,1"></li>
+          <li data-pos="1,2"></li>
+          <!-- third row -->
+          <li data-pos="2,0"></li>
+          <li data-pos="2,1"></li> 
+          <li data-pos="2,2"></li>
+      </ul>
+      
+      <button id="reset-game" class="invisible">Back</button>
+      
+      <!-- Game Messages -->
+      <div id="game-messages">
+          <span class="player-x-win">¡Player Two Wins!</span>
+          <span class="player-o-win">¡You Wins!</span>
+          <span class="draw">Draw Game</span>
+      </div>
+      
+      <aside id="nfo">
+          <h2>Who's Turn</h2>
+          <span id="player-turn"></span>
+      </aside>
+  </div>
+	
+
+	<script src="/socket.io/socket.io.js" type="text/javascript"></script>
+	<script src="js/jquery-2.2.1.min.js" type="text/javascript"></script>
+  <script src="js/game-client.js" type="text/javascript"></script>
+
+</body>
+</html>
