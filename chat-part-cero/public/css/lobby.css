@@ -1,0 +1,117 @@
+body {
+  background: #485b6e;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-align: center;
+  padding: 40px 0;
+  color: white;
+}
+
+.disabled{
+    pointer-events:none;
+    opacity:0.4;
+}
+
+.container {
+  margin: 0 auto;
+  width: 400px;
+  background: #444753;
+  border-radius: 5px;
+}
+
+.people-list {
+  /*cursor: pointer;*/
+  width: 400px;
+  float: left;
+}
+.people-list ul {
+  list-style-type: none;
+  padding: 20px;
+  padding-right: 40px;
+}
+.people-list ul li {
+}
+/*.people-list ul li:hover {
+  background-color: #fff;
+  color: #000;
+}*/
+.people-list img {
+  float: left;
+}
+.people-list .about {
+  float: left;
+  margin-top: 8px;
+}
+.people-list .about {
+  padding-left: 8px;
+}
+.people-list .status {
+  color: #92959E;
+}
+
+.online, .offline, .me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: #86BB71;
+}
+
+.on-game {
+  pointer-events:none;
+  opacity:0.4;
+}
+
+.me {
+  color: #94C2ED;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+/*********/
+.btn {
+  font-family: Helvetica;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #113247;
+  font-weight: bold;
+  padding: 5px 11px 5px 11px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #676c70;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:active {
+  background: #676c70;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}

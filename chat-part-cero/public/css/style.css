@@ -1,0 +1,219 @@
+body {
+  margin-top: 40px;
+  background: #485b6e;
+  color: #fff;
+  font-family: Helvetica;
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #f1f1f1
+}
+.none{
+  display: none;
+}
+
+.disabled{
+    pointer-events:none;
+    opacity:0.4;
+}
+
+.invisible{
+  display: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 400px;
+}
+
+#game {
+  height: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+#game > li {
+  list-style: none;
+  float: left;
+  overflow: hidden;
+  text-decoration: none;
+  width: 100px;
+  height: 100px;
+  background: #f1f1f1;
+  border: 1px solid #ccc;
+  border-right: 1px solid #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+#game > li.x {
+  font-size: 40px;
+  color: #ed4e6e
+}
+
+#game > li.o {
+  font-size: 40px;
+  color: #485b6e;
+}
+
+#game > li:hover {
+  background: #f9f9f9;
+}
+
+#game > li:active {
+  width: 100px;
+  height: 100px;
+  border: 0;
+}
+
+#nfo {
+  text-align: center;
+  margin-top: 10px;
+}
+
+#whos-turn > span,
+#game-messages > span {
+  display: none;
+}
+
+#whos-turn.x span.x,
+#whos-turn.o span.o,
+#game-messages.player-x-win > span.player-x-win,
+#game-messages.player-o-win > span.player-o-win,
+#game-messages.draw > span.draw {
+  display: block;
+  margin-top: 10px;
+}
+
+#reset-game {
+  text-align: center;
+  border: none;
+  padding: 0.6em 1.2em;
+  background: #ed4e6e;
+  color: #fff;
+  font-size: 1em;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: inline-block;
+  margin: 3px 2px;
+  border-radius: 2px;
+}
+
+#reset-game:hover {
+  background: #2c3e52;
+}
+
+
+/**** LOBBY***/
+.container {
+  margin: 0 auto;
+  width: 400px;
+  background: #444753;
+  border-radius: 5px;
+}
+
+.people-list {
+  /*cursor: pointer;*/
+  width: 400px;
+  float: left;
+}
+.people-list ul {
+  list-style-type: none;
+  padding: 20px;
+  padding-right: 40px;
+}
+.people-list ul li {
+}
+/*.people-list ul li:hover {
+  background-color: #fff;
+  color: #000;
+}*/
+.people-list img {
+  float: left;
+}
+.people-list .about {
+  float: left;
+  margin-top: 8px;
+}
+.people-list .about {
+  padding-left: 8px;
+}
+.people-list .status {
+  color: #92959E;
+}
+
+.online, .offline, .me {
+  margin-right: 3px;
+  font-size: 10px;
+}
+
+.online {
+  color: #86BB71;
+}
+
+.on-game {
+  pointer-events:none;
+  opacity:0.4;
+}
+
+.me {
+  color: #94C2ED;
+}
+
+.align-left {
+  text-align: left;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.float-right {
+  float: right;
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+
+
+/*********/
+.btn {
+  font-family: Helvetica;
+  -webkit-border-radius: 5;
+  -moz-border-radius: 5;
+  border-radius: 0px;
+  color: #ffffff;
+  font-size: 16px;
+  background: #113247;
+  font-weight: bold;
+  padding: 5px 11px 5px 11px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #676c70;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
+.btn:active {
+  background: #676c70;
+  font-weight: bold;
+  text-decoration: none;
+  color: #fff;
+}
