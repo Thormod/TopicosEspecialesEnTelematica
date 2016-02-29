@@ -1,4 +1,4 @@
-//Express  --> basic server setup
+//Express basic server setup
 var express = require('express');
 var app = express();
 var server = require('http').createServer(app);
@@ -19,7 +19,6 @@ app.use(express.static(__dirname + '/public'));
 
 // Number of useres connected
 var number_of_users = -1;
-
 // Users
 var users = [];
 
